@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# Env & packaging
+.env
+.venv/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Test & coverage
+.coverage
+htmlcov/
+.tox/
+.cache/
+pytest_cache/
+
+# Logs
+*.log
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+.env
+
+# Ignore Hugging Face Spaces logs (if any get created)
+huggingface.log
+
+data/events.jsonl
+build/
+
+# Data
+*.parquet
+*.pkl
+*.csv
+*.faiss
+
+# Generated embeddings
+embeddings/faiss_index/

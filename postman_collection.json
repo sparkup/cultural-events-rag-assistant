@@ -1,0 +1,61 @@
+{
+  "info": {
+    "_postman_id": "e1382e36-8605-4d4f-ade9-25652923c652",
+    "name": "Cultural Events RAG Assistant",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6884331"
+  },
+  "item": [
+    {
+      "name": "Local RAG assistant - ask",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"question\": \"What cultural events happened in France in the last 6 months?\",\n    \"k\": 6\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/ask",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "ask"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Local RAG assistant - rebuild",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8000/rebuild",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "rebuild"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

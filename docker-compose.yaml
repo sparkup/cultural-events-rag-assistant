@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  # FastAPI container running the RAG assistant
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag_assistant_app
+    ports:
+      - "8000:7860"
+    env_file:
+      - .env
+    networks:
+      - rag_assistant_net
+    volumes:
+      - .:/app
+
+networks:
+  rag_assistant_net:

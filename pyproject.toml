@@ -1,0 +1,28 @@
+[project]
+name = "cultural-events-rag-assistant"
+version = "0.1.0"
+# RAG assistant for cultural events (OpenAgenda data)
+description = "RAG assistant for cultural events using OpenAgenda data"
+authors = [
+    { name = "David Worsley-Tonks", email = "david.worsley.tonks@gmail.com" }
+]
+requires-python = ">=3.10,<3.12"
+
+dependencies = [
+    "requests",
+    "python-dotenv",
+    "pydantic",
+    "fastapi",
+    "faiss-cpu",
+    "langchain>=0.1.16",
+    "langchain-community",
+    "langchain-huggingface",
+    "langchain-mistralai",
+    "mistralai==0.4.2",
+    "sentence_transformers",
+    "uvicorn"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
